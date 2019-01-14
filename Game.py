@@ -4,13 +4,15 @@ import turtle
 
 
 #write('Turtle Race', align='up')
-#turtle.Screen('Turtle Race')
-turtle.color('green')
+screen = Screen()
+screen.title('Turtle Race')
+screen.bgcolor('#000000')
 speed(10)
 penup()
 goto(-140,140)
 
 for i in range(15):
+	pencolor('white')
 	write(i, align = 'center')
 	right(90)
 	forward(10)
@@ -23,7 +25,7 @@ for i in range(15):
 
 
 ada = Turtle()
-ada.color('red')
+ada.color('#e15f41')
 ada.shape('turtle')
 ada.penup()
 ada.goto(-160,100)
@@ -33,25 +35,26 @@ ada.pendown()
 #	ada.forward(randint(1,5))
 
 bob = Turtle()
-bob.color('blue')
+bob.color('skyblue')
 bob.shape('turtle')
 bob.penup()
 bob.goto(-160,70)
 bob.pendown()
 
 sun = Turtle()
-sun.color('skyblue')
+sun.color('#f53b57')
 sun.shape('turtle')
 sun.penup()
 sun.goto(-160,40)
 sun.pendown()
 
 moon = Turtle()
-moon.color('silver')
+moon.color('#4DAF7C')
 moon.shape('turtle')
 moon.penup()
 moon.goto(-160,10)
 moon.pendown()
+
 ada_score = 0
 bob_score = 0
 sun_score = 0
@@ -83,8 +86,3 @@ for turn in range(100):
 		write('Winner is silver', align='right')
 		break
 """
-
-
-
-
-
